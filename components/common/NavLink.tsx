@@ -2,6 +2,7 @@ import Link from "next/link";
 import cn from 'classnames';
 import React from "react";
 
+/* eslint-disable  @typescript-eslint/no-explicit-any */
 interface Props {
     isSelected?: boolean;
     isMobile?: boolean;
@@ -10,7 +11,7 @@ interface Props {
     children: React.ReactNode;
     [rest: string]: any;
 }
-
+/* eslint-enable  @typescript-eslint/no-explicit-any */
 export default function NavLink({
     isSelected,
     isMobile,

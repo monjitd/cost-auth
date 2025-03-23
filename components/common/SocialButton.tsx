@@ -4,7 +4,8 @@ interface Props {
 	// provider: 'google' | 'facebook';
 	provider: 'google';
 	children: React.ReactNode;
-	[rest: string]: any;
+	// [rest: string]: any;
+	[rest: string]: unknown;
 }
 
 export default function SocialButton({ provider, children, ...rest }: Props) {
